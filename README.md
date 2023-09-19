@@ -7,4 +7,4 @@ https://github.com/UQdeco3500/FifthSense/wiki
 https://github.com/UQdeco3500/template/wiki/Design_Process
 
 ## Link to Working Prototype, Promotional Material, and Documentation  
-To be made available later. 
+https://github.com/UQdeco3500/FifthSense
