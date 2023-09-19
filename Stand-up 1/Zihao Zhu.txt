@@ -33,10 +33,11 @@ API:
 
 localhost:
   - Install a Local Server: Apache(used once before) / Nginx / Node.js(most familiar with)
-  - use the framework of Express.js create a website(as js file):
+  - Use the framework of Express.js create a website(as js file):
       - Install node.js (https://nodejs.org/en) if haven't
       - Create a new project directory, initialize a new Node.js project, install Express.js(npm install express)
       - Create a js file and set up our website
       - Modify functionalities (Chatting and so on)
       - Run and test the local server
+  - Link figma built-in button to our local server url.
 
