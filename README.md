@@ -1,4 +1,4 @@
-# Project Name Here
+# FifthSense
 ***
 ## Link To Project Proposal
 link to wiki page here containing proposal slides
@@ -7,4 +7,4 @@ link to wiki page here containing proposal slides
 https://github.com/UQdeco3500/template/wiki/Design_Process
 
 ## Link to Working Prototype, Promotional Material, and Documentation  
-link to relevant links for prototype, promotional material & documentation
+To be made available later. 
