@@ -1,0 +1,42 @@
+-- Interview draft questions - college students
+1. After studying, how do choose to relax. Is it via games or something else?
+2. How many hours a day do you play games? - 2.5 hours.
+3. How do you feel about someone who plays games for hours a day and seems addicted to gaming?
+4. Do you think you are currently experiencing gaming addiction? 
+5. Have you ever thought about changing your addiction? By what method?
+6. Under what circumstances do you have stronger self-control? Do you think listening to white noise can help you kick your gaming addiction? What type of white noise?
+7. What apps have you used to combat your gaming addiction? What are some impressive features? (You can say what you like and dislike)
+8. Do you want the software to have social functions? For example, friends listening to music and chatting at the same time, virtual room,etc?
+9. If you don't use game addiction solving software, why? Or do you have any concerns?
+10. If you were using a game addiction solving app, what circumstances or factors caused you to give up using it? What worries or concerns do you have?
+11. How did your frequency change from when you started using similar apps to when you stopped using them?
+12. What aspects of the apps you've used before have made you feel comfortable?
+13. What aspects of the apps you've used before have made you feel uncomfortable?
+14. What functions do you think the game addiction solving software has that you most want to have?
+15. What additional features do you think may motivate you to use the app every time you play games?
+16. What do you think about implementing a sharing system where you can share your achievements and may increase your motivation?
+17. Do you have any other suggestions for this software? If you've used such apps, what do you think they need to improve?
+
+
+-- Interview results-interesting points: 
+1. Regular reminders. And also notify users of the important tasks they need to do next.
+2. they expect to have a better gaming experience while using the software.
+3. Merely having an achievement system might not motivate me to use it. It might be better if there were tangible or virtual rewards.
+
+
+-- Connect figma with self-made features
+API:
+  - Figma Plugin Development: With Figma's plugin API, we can create a plugin that can make external API calls using the browser's Fetch API or XMLHttpRequest.
+  - Web Application Integration: navigate from Figma to a JS application or program by adding a link in design that points to the URL of our JS application.
+  - Set up a localhost website, adding in external functions (chatting and so on).
+  - In figma, use a link pointer(button) that points to the localhost url.
+
+localhost:
+  - Install a Local Server: Apache(used once before) / Nginx / Node.js(most familiar with)
+  - Use the framework of Express.js create a website(as js file):
+      - Install node.js (https://nodejs.org/en) if haven't
+      - Create a new project directory, initialize a new Node.js project, install Express.js(npm install express)
+      - Create a js file and set up our website
+      - Modify functionalities (Chatting and so on)
+      - Run and test the local server
+  - Link figma built-in button to our local server url.
