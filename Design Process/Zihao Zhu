@@ -1,3 +1,4 @@
+```` Stand-up 1 ````
 -- Interview draft questions - college students
 1. After studying, how do choose to relax. Is it via games or something else?
 2. How many hours a day do you play games? - 2.5 hours.
@@ -39,4 +40,19 @@ localhost:
       - Create a js file and set up our website
       - Modify functionalities (Chatting and so on)
       - Run and test the local server
-  - Link figma built-in button to our local server url.
+
+
+
+
+```` Stand-up 2 ````
+-- Integrate chat function and Prototype
+-- Research and atampts for calling external API in Figma prototype
+1. use Figma plug-in API to create a customized plug-in, and call external API using this plug-in
+2. based on node.js use Figma plug-in tool: 'npm install -g figplug'
+3. Thru button click, fetch the API & do error catch
+4. When test the plug-in, 'figplug serve' cannot start our local server normally for unknown reasons
+5. Solution: Start javascript local host, Link the local server to the chat button in the prototype. So we can call the local server by popping up new pages
+
+-- Chat function modification in progress
+1. modifying interaction style 
+2. modifying css code to make the style of the chat function interface consistent with the Prototype
