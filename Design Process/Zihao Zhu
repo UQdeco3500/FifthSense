@@ -51,7 +51,8 @@ localhost:
 2. based on node.js use Figma plug-in tool: 'npm install -g figplug'
 3. create a plug-in, make it Thru button click, fetch the API & do error catch
 4. When test the plug-in, 'figplug serve' cannot start our local server normally for unknown reasons
-5. Solution: Start javascript local host, Link the local server to the chat button in the prototype. So we can call the local server by popping up new pages
+5. Solution: Start javascript local host, Link the local server to the chat button in the prototype. 
+   So we can call the local server by popping up new pages
 
 -- Chat function modification in progress
 1. modifying interaction style 
