@@ -6,7 +6,7 @@
 https://github.com/UQdeco3500/FifthSense/wiki
 
 ## Prototype
-https://github.com/UQdeco3500/FifthSense
+https://github.com/UQdeco3500/FifthSense/wiki/About-our-Prototype
 
 ## Prototype Instructions
 https://github.com/UQdeco3500/FifthSense/wiki/Prototype-Instructions
