@@ -1,10 +1,14 @@
 # Team Fifth Sense
 ***
-## Link To Project Proposal
+## Promotional Poster
+
+## Project Proposal
 https://github.com/UQdeco3500/FifthSense/wiki
 
-## Link to Design Process Overview
+## Design Process Overview
 https://github.com/UQdeco3500/template/wiki/Design_Process
 
-## Link to Working Prototype, Promotional Material, and Documentation  
+## Prototype
 https://github.com/UQdeco3500/FifthSense
+
+## Prototype Instructions
