@@ -48,7 +48,7 @@ Step 11: Now open AndroidStudio, set up SDK and API as AndroidStudio suggests.
 
 Step 12: Now run the emulator for google pixel phone which is the normally the default emulator for AndroidStudio.
 
-Step 13: When you open the file DashboardActivity.kt in AndroidStudio, you should an address like this on line 41, "http://A.A.A.A:8080". 
+Step 13: When you open the file DashboardActivity.kt in AndroidStudio, you should see an address like this on line 41, "http://A.A.A.A:8080". 
 
 Step 14: Now replace the 'A.A.A.A' segment on line 41 with the one you copied earlier.
 
