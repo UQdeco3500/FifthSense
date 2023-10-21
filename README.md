@@ -26,7 +26,7 @@ Process:
 
 Step 1: Clone the repository code to your local machine.
 
-Step 2: Open IntelliJ with chat-feature as the source code, and simultaneously open AndroidStudio with android-app as source code.
+Step 2: Open IntelliJ with chat-feature folder as the source code, and simultaneously open AndroidStudio with android-app folder as the source code.
 
 Step 3: Click “Trust and Open” on both files.
 
@@ -56,7 +56,7 @@ Step 14: Now go back to IntelliJ, and run the SpringBootWebsocketApplication.
 
 Step 15: While that's running, go to AndroidStudio and run the application as well while the emulator is also running.
 
-Step 16: This process will take some time to run as these are very heavy application but once they run, you can enter the login information which is "samarth" for the username and "test1234" for the password.
+Step 16: This process will take some time to run as these are very heavy applications but once they run, you can enter the login information which is "samarth" for the username and "test1234" for the password.
 
 - Note:
 
