@@ -1,14 +1,17 @@
 # Team Fifth Sense
 ***
 ## Promotional Poster and StoryBoard
-Poster: https://github.com/UQdeco3500/FifthSense/wiki/Poster
+
+Poster: https://github.com/UQdeco3500/FifthSense/wiki/Poster  
 
 StoryBoard: https://github.com/UQdeco3500/FifthSense/wiki/Storyboard
 
 ## Project Proposal
+
 https://github.com/UQdeco3500/FifthSense/wiki
 
 ## Prototype
+
 https://github.com/UQdeco3500/FifthSense/wiki/About-our-Prototype
 
 ## Prototype Instructions
