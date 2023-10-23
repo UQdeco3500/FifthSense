@@ -1,6 +1,8 @@
 # Team Fifth Sense
 ***
-## Promotional Poster
+## Promotional Poster and StoryBoard
+Poster: https://github.com/UQdeco3500/FifthSense/wiki/Poster
+
 
 ## Project Proposal
 https://github.com/UQdeco3500/FifthSense/wiki
@@ -12,7 +14,7 @@ https://github.com/UQdeco3500/FifthSense/wiki/About-our-Prototype
 
 - For interactive prototype, we use Figma, you can click the link to review them directly:- 
 
-Link:
+Figma Link:
 
 - For functional prototype, we use IntelliJ and AndroidStudio, you can complete the review according to the following instructions:- 
 
