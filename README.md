@@ -18,7 +18,7 @@ Link:
 
 Requirements:
 
-HighEnd PC (MacBook(Ensure that AndroidStudio and IntelliJ is installed) or Windows laptop(Ensure that AndroidStudio and IntelliJ and Windows Subsystem for Linux is installed)).
+HighEnd PC with atleast 16GB RAM (MacBook(Ensure that AndroidStudio and IntelliJ is installed) or Windows laptop(Ensure that AndroidStudio and IntelliJ is installed and GitBash is present)).
 
 Android phone(API 30+, Android version 6+)
 
@@ -26,7 +26,7 @@ Process:
 
 Step 1: Clone the repository code to your local machine.
 
-Step 2: Open IntelliJ with chat-feature folder as the source code, and simultaneously open AndroidStudio with android-app folder as the source code.
+Step 2: Open IntelliJ with Chat-Feature folder as the source code, and simultaneously open AndroidStudio with AndroidApp folder as source code.
 
 Step 3: Click “Trust and Open” on both files.
 
@@ -36,9 +36,9 @@ Step 5: In IntelliJ, also install the necessary extensions and plugins which Int
 
 Step 6: When IntelliJ is set up and the SpringBootWebsocketApplication is ready to run, first we go to android studio set up.
 
-Step 7: Before opening AndroidStudio, open either Terminal on MacBook or Windows Subsystem for Linux on Windows laptop.
+Step 7: Before opening AndroidStudio, open either Terminal on MacBook or GitBash on Windows laptop.
 
-Step 8: In Terminal or Windows Subsystem for Linux, Run the command "ifconfig | grep "inet " | grep -v 127.0.0.1". This may download new files on your PC and you will also get an output.
+Step 8: In Terminal or GitBash, Run the command "ifconfig | grep "inet " | grep -v 127.0.0.1". This may download new files on your PC and you will also get an output.
 
 Step 9: You will get an output like this, "inet 'A.A.A.A' netmask 'B' broadcast 'C.C.C.C'", where A, B, C represent numbers.
 
@@ -48,7 +48,7 @@ Step 11: Now open AndroidStudio, set up SDK and API as AndroidStudio suggests.
 
 Step 12: Now run the emulator for pixel 7 pro API 34 which is the normally the default emulator for AndroidStudio.
 
-Step 13: When you open the file DashboardActivity.kt in AndroidStudio, you should see an address like this on line 41, "http://A.A.A.A:8080". 
+Step 13: When you open the file AndroidApp/app/src/main/java/com/example/myapplication/UI/Activities/DashboardActivity.kt in AndroidStudio, you should see an address like this on line 41, "http://A.A.A.A:8080". 
 
 Step 14: Now replace the 'A.A.A.A' segment on line 41 with the one you copied earlier.
 
@@ -61,4 +61,5 @@ Step 16: This process will take some time to run as these are very heavy applica
 - Note:
 
 You can also connect your local android phone as an emulator on AndroidStudio by using the same wi-fi network. Now, when you click run for the application, the app will run on your local device. 
+
 
