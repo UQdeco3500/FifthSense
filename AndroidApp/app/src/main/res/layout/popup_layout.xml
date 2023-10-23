@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/popupImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_error"
+        android:layout_gravity="center"
+        android:contentDescription="@string/popup_image"/>
+
+    <TextView
+        android:id="@+id/popupMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/popup_message"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

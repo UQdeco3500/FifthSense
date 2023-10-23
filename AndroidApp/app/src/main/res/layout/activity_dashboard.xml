@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="32dp"
+    android:background="@color/secondary">
+
+    <!-- Header: Contains title and user avatar -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/secondary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="navigateToDasboard">
+
+        <!-- User Avatar -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/profile" />
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello, Samarth"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+    </LinearLayout>
+
+    <!-- News Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/primary"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/news"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Gaming Addiction ruins lives as players lost jobs."
+                android:textColor="@color/secondary"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Online gaming adictions driving childern out of school."
+                android:textColor="@color/secondary"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="left" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- GridLayout for tiles/cards in a 2x2 formation -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsCard"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_margin="16dp"
+        android:columnCount="2"
+        android:gravity="center">
+
+        <!-- Profile Tile -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:onClick="navigateToProfile">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/profile"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your personal data and achievements."
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tasks Tile -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:onClick="navigateToTask">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/tasks"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tasks"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your daily tasks and to-dos."
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Rewards Tile -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:onClick="navigateToRewards">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/rewards"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rewards"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your earned badges and rewards."
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Settings Tile -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:onClick="navigateToSettings">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/settings"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manage app preferences."
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Timer Tile -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:onClick="navigateToTimer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/timer"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timer"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track and manage your time."
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Activity Tile -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:onClick="navigateToActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/activity"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start or manage your activities"
+                    android:textColor="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

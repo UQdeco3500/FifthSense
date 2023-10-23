@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Header: Contains title and user avatar -->
+            <LinearLayout
+                android:id="@+id/headerLayoutSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:onClick="navigateToDasboard">
+
+                <!-- User Avatar -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/settings" />
+
+                <!-- Dashboard Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Settings"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/challenge"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_margin="8dp" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Game Time Challenge"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/gameTimeChallenge" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Screen Usage Time Challenge"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/screenUsageTimeChallenge" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Pick Up Times"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/pickUpTimes" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Continuous Usage Challenge"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/continuousUsageChallenge" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Weekly Summary"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/weeklySummary" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Daily Summary"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/dailySummary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_support"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/qaButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:text="Q&amp;A"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:text="Feedback"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:id="@+id/feedbackButton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:text="Privacy Clause"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:id="@+id/privacyClauseButton" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:shadowRadius="@integer/material_motion_duration_long_1"
+                android:background="@drawable/button_background"
+                android:text="User Agreements"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:id="@+id/userAgreementsButton" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

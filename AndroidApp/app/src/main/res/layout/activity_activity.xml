@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:https="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary">
+
+    <!-- Header: Contains title and user avatar -->
+    <LinearLayout
+        android:id="@+id/headerLayoutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="navigateToDasboard">
+
+        <!-- User Avatar -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/activity" />
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Activity"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/headerLayoutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- Weekly Activity -->
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="14dp"
+            android:background="@drawable/button_background"
+            android:text="Weekly Activity"
+            android:textSize="18sp"
+            android:textColor="@color/secondary" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="14dp"
+            android:background="@drawable/button_background"
+            android:text="Monthly Activity"
+            android:textSize="18sp"
+            android:textColor="@color/secondary" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="14dp"
+            android:src="@mipmap/activity_background"/>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>
+

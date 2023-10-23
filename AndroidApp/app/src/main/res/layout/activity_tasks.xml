@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Header: Contains title and user avatar -->
+            <LinearLayout
+                android:id="@+id/headerLayoutSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:onClick="navigateToDasboard">
+
+                <!-- User Avatar -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/tasks" />
+
+                <!-- Dashboard Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Tasks"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Studying"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_margin="8dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Short Study Session"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/gameTimeChallenge"
+                android:onClick="navigateToTimer"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Deep Study Session"
+                android:textSize="18sp"
+                android:textColor="@color/secondary"
+                android:id="@+id/screenUsageTimeChallenge"
+                android:onClick="navigateToTimer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playing"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/qaButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Relaxed Gaming"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:onClick="navigateToTimer"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Interactive Gaming"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:id="@+id/feedbackButton"
+                android:onClick="navigateToTimer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercising"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Gymming Session"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:id="@+id/privacyClauseButton"
+                android:onClick="navigateToTimer"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:padding="14dp"
+                android:background="@drawable/button_background"
+                android:text="Running Session"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/secondary"
+                android:id="@+id/userAgreementsButton"
+                android:onClick="navigateToTimer"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

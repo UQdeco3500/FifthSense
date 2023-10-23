@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="login_error">Invalid username or password. Please try again.</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="popup_message">Popup Message</string>
+    <string name="popup_image">Popup Image</string>
+    <string name="challenge">Challenge</string>
+    <string name="user_support">User Support</string>
+    <string name="others">Others</string>
+</resources>

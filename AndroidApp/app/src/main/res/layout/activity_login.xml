@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/primary"
+    tools:context=".UI.Activities.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To PlayRight"
+        android:id="@+id/welcomeText"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/secondary"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:padding="16dp"
+        android:contentDescription="App Icon"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/secondary"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/secondary"
+        android:padding="16dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_margin="16dp"
+        android:background="@color/secondary"
+        android:textColor="@color/primary"
+        android:elevation="4dp"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:id="@+id/forgotPasswordText"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/secondary"
+        android:textSize="16sp" />
+</LinearLayout>

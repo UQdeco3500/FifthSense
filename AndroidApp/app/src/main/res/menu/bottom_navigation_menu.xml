@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Profile item -->
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@mipmap/profile"
+        android:title="Dashboard" />
+
+    <!-- Rewards item -->
+    <item
+        android:id="@+id/navigation_rewards"
+        android:icon="@mipmap/rewards"
+        android:title="Rewards" />
+
+    <!-- Timer item -->
+    <item
+        android:id="@+id/navigation_timer"
+        android:icon="@mipmap/timer"
+        android:title="Timer" />
+
+    <!-- Chat item -->
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@mipmap/chat"
+        android:title="Chat" />
+
+    <!-- Settings item -->
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@mipmap/settings"
+        android:title="Settings" />
+
+</menu>
