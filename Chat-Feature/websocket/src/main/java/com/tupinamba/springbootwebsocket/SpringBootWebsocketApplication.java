@@ -4,7 +4,6 @@
 //https://github.com/gabrielpulga/spring-boot-websocket
 
 //changed the language of the code to suit our needs.
-
 package com.tupinamba.springbootwebsocket;
 
 import org.springframework.boot.SpringApplication;
