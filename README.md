@@ -68,4 +68,10 @@ Step 16: This process will take some time to run as these are very heavy applica
 
 You can also connect your local android phone as an emulator on AndroidStudio by using the same wi-fi network. Now, when you click run for the application, the app will run on your local device. 
 
+- Video Guide to run the Application:
+
+Link: https://youtu.be/0FlbE4MPbAc
+
+
+
 
